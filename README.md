@@ -6,8 +6,14 @@ Opened the original dataset (netflix_titles.csv).
 
 Checked total rows (8,807) and columns (12).
 
+2. Remove duplicates
 
-2. Filter for Latest 5 Years
+Select the whole table → Go to Data → Remove Duplicates.
+
+Keep show_id as the unique key.
+
+
+3. Filter for Latest 5 Years
 
 Found the latest release_year in the dataset (2021).
 
@@ -15,7 +21,7 @@ Kept only rows where release_year >= 2017 (last 5 years: 2017–2021).
  
 
 
-3. Keep Only 500 Rows
+4. Keep Only 500 Rows
 
 Took the first 500 rows from this filtered data (head selection).
 
@@ -23,7 +29,7 @@ Resulting file had exactly 500 records.
 
 
 
-4. Handle Missing Values
+5. Handle Missing Values
 
 director → replaced blanks with "Unknown".
 
@@ -38,12 +44,12 @@ rating → replaced blanks with "Not Rated".
 duration → replaced blanks with "Unknown".
 
 
-5. Standardize Date Format
+6. Standardize Date Format
 
 Converted date_added column into Date format (dd-mm-yyyy).
 
 
-6. Split “Duration” Column
+7. Split “Duration” Column
 
 Created two new columns:
 
